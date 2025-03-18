@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>IS208 - Vườn Sao Băng</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     
     <!-- Navigation Menu -->
      <nav>
         <div class="nav-container">
-            <div class="logo">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
                 <span>Vườn Sao Băng</span>
             </div>
             <div class="links">
-                <div class="link"><a href="#">Home</a></div>
-                <div class="link">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
                     <a href="#">Project</a>
                     <div class="subnav">
                         <a href="#">Information</a>
                         <a href="#">Timeline</a>
                     </div>
                 </div>
-                <div class="link"><a href="#">About</a></div>
-                <div class="link"><a href="#">Contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Contact</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
@@ -41,19 +42,20 @@
      </nav>
      <section>
         <div class="main-container">
-            <div class="image">
-                <img src="tamako_5f6fb4b0d668e.png" alt="">
+            <div class="image" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="2000">
+                <img src="images/tamako_5f6fb4b0d668e.png" alt="">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left">Hey, This is <span>Vườn Sao Băng</span></h1>
-                <div class="typewriter">We are <span class="typewriter-text"></span><label for=""></label></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur consequuntur veritatis temporibus veniam eligendi eveniet sunt delectus iste perspiciatis cumque, explicabo optio dolor quae maiores rerum, distinctio accusantium quaerat!</p>
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">Hey, This is <span>Vườn Sao Băng</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="800">We are <span class="typewriter-text"></span><label for=""></label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur consequuntur veritatis temporibus veniam eligendi eveniet sunt delectus iste perspiciatis cumque, explicabo optio dolor quae maiores rerum, distinctio accusantium quaerat!</p>
                 <div class="social-links">
-                    <a href="https://github.com/AdamNbz/IS208"><i class="fa-brands fa-github"></i></a>
-                    <a href="23520131@gm.uit.edu.vn"><i class="fa fa-envelope"></i></a>
+                    <a href="https://github.com/AdamNbz/IS208" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200"><i class="fa-brands fa-github"></i></a>
+                    <a href="23520131@gm.uit.edu.vn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/adamng.0210" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-facebook"></i></a>
                 </div>
-                <div class="btn">
-                    <button>Hire me</button>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Explore more</button>
                 </div>
             </div>
         </div>
@@ -63,17 +65,17 @@
      <!-- About Section -->
      <section class="about" id="about">
         <div class="content">
-            <div class="title"><span>About Us</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Us</span></div>
             <div class="about-details">
-                <div class="left">
-                    <img src="Logo-Khoa-HTTT.png" width="700" height="700" alt="" />
+                <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="images/Logo-Khoa-HTTT.png" alt="" />
                 </div>
                 <div class="right">
-                    <div class="topic">We are <span>Vườn Sao Băng</span>, coming to the audiences from IS208.P21</div>
-                    <p>
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">We are <span>Vườn Sao Băng</span>, coming to the audiences from IS208.P21</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nulla commodi vel sapiente quaerat qui, necessitatibus consectetur nihil dignissimos saepe temporibus, neque consequuntur rem placeat tempore fugit officia quasi soluta?
                     </p>
-                    <div class="button">
+                    <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
                         <button>Download our Contracts!</button>
                     </div>
                 </div>
@@ -84,14 +86,14 @@
      <!-- Project Section -->
      <section class="project" id="project">
         <div class="content">
-            <div class="title"><span>Project Information</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Project Information</span></div>
             <div class="project-details">
                 <div class="text">
-                    <div class="topic">
+                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
                         Project Name
                     </div>
-                    <p data-aos="fade-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit possimus blanditiis ea quas quaerat neque voluptatum, libero culpa dolores voluptates consequatur rem excepturi magnam eius reprehenderit omnis! Illo, ut. Aperiam.</p>
-                    <div class="desc">
+                    <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit possimus blanditiis ea quas quaerat neque voluptatum, libero culpa dolores voluptates consequatur rem excepturi magnam eius reprehenderit omnis! Illo, ut. Aperiam.</p>
+                    <div class="desc" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
                         <div class="num">10</div>
                         <div class="exp">
                             Years Of <br/>
@@ -101,16 +103,20 @@
                 </div>
                 <div class="boxes">
                     <div class="box">
-                        <div class="topic">HTML</div>
-                        <div class="per">90%</div>
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">HTML</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">90%</div>
                     </div>
                     <div class="box">
-                        <div class="topic">CSS</div>
-                        <div class="per">80%</div>
+                        <div class="topic" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">CSS</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">80%</div>
                     </div>
                     <div class="box">
-                        <div class="topic">JavaScript</div>
-                        <div class="per">70%</div>
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">JavaScript</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">70%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="450">PHP</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">60%</div>
                     </div>
                 </div>
             </div>
@@ -120,14 +126,14 @@
     <!-- Timeline Section -->
     <section class="timeline" id="timeline">
         <div class="content">
-            <div class="title"><span>Project Timeline</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Project Timeline</span></div>
             <div class="timeline-details">
                 <!-- Bạn có thể thay đổi nội dung timeline theo dự án của mình -->
                 <ul>
-                    <li><strong>Sprint 1 (../../2025):</strong> Khởi động dự án và lên kế hoạch chi tiết.</li>
-                    <li><strong>Sprint 2 (../../2025):</strong> Thiết kế giao diện và xây dựng kiến trúc backend.</li>
-                    <li><strong>Sprint 3 (../../2025):</strong> Phát triển tính năng chính và thử nghiệm nội bộ.</li>
-                    <li><strong>Sprint 4 (../../2025):</strong> Ra mắt sản phẩm và thu thập phản hồi.</li>
+                    <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100"><strong>Sprint 1 (../../2025):</strong> Khởi động dự án và lên kế hoạch chi tiết.</li>
+                    <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150"><strong>Sprint 2 (../../2025):</strong> Thiết kế giao diện và xây dựng kiến trúc backend.</li>
+                    <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"><strong>Sprint 3 (../../2025):</strong> Phát triển tính năng chính và thử nghiệm nội bộ.</li>
+                    <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="250"><strong>Sprint 4 (../../2025):</strong> Ra mắt sản phẩm và thu thập phản hồi.</li>
                 </ul>
             </div>
         </div>
@@ -136,32 +142,32 @@
     <!-- Team Information Section -->
     <section class="team" id="team">
         <div class="content">
-            <div class="title"><span>Team Information</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Team Information</span></div>
             <div class="team-details">
                 <div class="team-members">
-                    <div class="team-member">
-                        <img src="images/member1.jpg" alt="Trần Đại Hải">
+                    <div class="team-member" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                        <img src="images/image.png" alt="Trần Đại Hải">
                         <div class="member-info">
                             <strong>Trần Đại Hải</strong>
                             <p>Project Manager</p>
                         </div>
                     </div>
-                    <div class="team-member">
-                        <img src="tamako_5f6fb4b0d668e.png" alt="Nguyễn Võ Ngọc Bảo">
+                    <div class="team-member" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+                        <img src="images/bao.jpg" alt="Nguyễn Võ Ngọc Bảo">
                         <div class="member-info">
                             <strong>Nguyễn Võ Ngọc Bảo</strong>
                             <p>Lead Developer</p>
                         </div>
                     </div>
-                    <div class="team-member">
-                        <img src="images/member3.jpg" alt="Mai Nguyễn Bảo Duy">
+                    <div class="team-member" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">
+                        <img src="images/image.png" alt="Mai Nguyễn Bảo Duy">
                         <div class="member-info">
                             <strong>Mai Nguyễn Bảo Duy</strong>
                             <p>Designer</p>
                         </div>
                     </div>
-                    <div class="team-member">
-                        <img src="images/member4.jpg" alt="Lê Nguyễn Thành Công">
+                    <div class="team-member" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
+                        <img src="images/image.png" alt="Lê Nguyễn Thành Công">
                         <div class="member-info">
                             <strong>Lê Nguyễn Thành Công</strong>
                             <p>QA Engineer</p>
@@ -175,11 +181,11 @@
      <!-- Contact Section -->
      <section class="contact" id="contact">
         <div class="content">
-            <div class="title"><span>Contact Us</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>Contact Us</span></div>
             <div class="text">
-                <div class="topic">Any Issue While Using The Application?</div>
+                <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Having trouble?</div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo consequatur alias distinctio ex cum, tempore eum. Incidunt facere ratione, ducimus, illo beatae nulla suscipit tempora impedit et eos perspiciatis aperiam?</p>
-                <div class="button">
+                <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
                     <button>Contact Us Via Email</button>
                 </div>
             </div>
@@ -189,7 +195,7 @@
     <!-- Footer Section -->
     <footer>
         <div class="text">
-            <span>Created By <a href="https://www.facebook.com/adamng.0210/">nbzzz</a> | &#169; 2025 All Rights Reserved</span>
+            <span>Created By <a href="https://www.facebook.com/adamng.0210/">nbzzz</a> (Nguyễn Võ Ngọc Bảo) | &#169; 2025 All Rights Reserved</span>
         </div>
     </footer>
 
@@ -201,6 +207,10 @@
         backSpeed: 50,
         loop: true,
     });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
     </script>
 </body>
 </html>
