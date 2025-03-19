@@ -16,6 +16,34 @@ body {
     position: relative;
 }
 
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #b74b4b;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Khi thêm class .show thì hiển thị nút */
+.back-to-top-btn.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
 .stars {
     position: fixed;
     top: 0;
@@ -46,14 +74,14 @@ body {
     animation: shoot 3s linear infinite;
   }
   
-  @keyframes shoot {
+@keyframes shoot {
     0% {
-      transform: translate(0, 0) scale(1);
-      opacity: 1;
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
     }
     100% {
-      transform: translate(-500px, 500px) scale(0.5);
-      opacity: 0;
+        transform: translate(-500px, 500px) scale(0.5);
+        opacity: 0;
     }
 }
 
@@ -73,10 +101,14 @@ body {
     background: #b74b4b;
 }
 
-nav{
-    width: 100%;
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.7);
     height: 10vh;
-
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 .nav-container{
@@ -205,6 +237,7 @@ nav{
 section{
     width: 100%;
     min-height: 90vh;
+    scroll-margin-top: 12vh;
 }
 
 section .main-container{
@@ -212,6 +245,7 @@ section .main-container{
     justify-content: space-between;
     padding-left: 100px;
     align-items: center;
+    margin-top: 12vh;
 }
 
 .main-container .image {
@@ -323,7 +357,7 @@ section .main-container{
     scale: 1.1;
     color: #b74b4b;
     border: 2px solid #b74b4b;
-    background-color: transparent;
+    background-color: white;
     font-weight: 700;
     box-shadow: 0 0 40px #b74b4b;
 }
@@ -527,6 +561,11 @@ section .button button:hover{
     transform: translateX(-50%);
 }
 
+.timeline .timeline-details{
+    margin-top: 60px;
+    padding-top: 150px;
+}
+
 .timeline .timeline-details ul {
     list-style: none;
     padding: 0;
@@ -669,7 +708,7 @@ section .button button:hover{
 
 footer{
     background: #b74b4b;
-    padding: 15px 0;
+    padding: 10px 0;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
