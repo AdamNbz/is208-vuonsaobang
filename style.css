@@ -671,7 +671,8 @@ section .button button:hover{
 
 .team .team-details .team-member img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
     display: block;
 }
 
