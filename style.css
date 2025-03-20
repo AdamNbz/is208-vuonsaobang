@@ -372,6 +372,7 @@ section .content{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 100px 0;
 }
 
 section .title{
@@ -411,8 +412,8 @@ section .title span::after{
 }
 
 .about .left img{
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -424,7 +425,7 @@ section .title span::after{
 section .topic{
     color: white;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -485,22 +486,21 @@ section .button button:hover{
 }
 
 .project .project-details .desc{
+    color: white;
     display: flex;
     align-items: center;
     margin: 0 10px;
 }
 
-.project-details .desc .num{
-    color: white;
-    font-size: 80px;
-}
-
-.project-details .desc .exp{
-    color: white;
-    margin-left: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0.6px;
+.goal {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #b74b4b;
+    font-weight: bold;
+    line-height: 1.6;
 }
 
 .project-details .boxes{
@@ -595,7 +595,7 @@ section .button button:hover{
 
 .team {
     background: transparent;
-    padding: 40px 0;
+    padding: 0px 0;
 }
 
 .team .content {
@@ -705,6 +705,15 @@ section .button button:hover{
     width: 80%;
     text-align: center;
     margin: auto;
+    padding: 150px;
+}
+
+.contact .topic{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
 }
 
 footer{
