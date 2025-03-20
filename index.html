@@ -224,11 +224,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
-        AOS.init({offset:0, once: false});
-        const nav = document.querySelector('nav');
-        nav.addEventListener('aos:in', function(e){
-            this.removeAttribute('data-aos');
-        })
+        AOS.init({offset:0, once: true});
     </script>
 
     <script>
