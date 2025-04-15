@@ -239,7 +239,12 @@ section{
     min-height: 90vh;
     scroll-margin-top: 12vh;
 }
-
+.reside {
+width: 100%;
+min-height: 20vh;
+scroll-margin-top: 12vh;
+margin-bottom: 10px;
+}
 section .main-container{
     display: flex;
     justify-content: space-between;
@@ -465,7 +470,6 @@ section .button button:hover{
 .project{
     background: bkack;
 }
-
 .project .content{
     padding: 40px 0;
 }
@@ -490,6 +494,7 @@ section .button button:hover{
     display: flex;
     align-items: center;
     margin: 0 10px;
+    
 }
 
 .goal {
@@ -848,3 +853,104 @@ footer .text span a:hover{
         color: #b74b4b;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.warpper {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.collapsible {
+    max-width: 950px;
+    overflow: hidden;
+    font-weight: 500;
+  }
+  .collapsible input {
+    display: none;
+  }
+  
+  .collapsible label {
+    position: relative;
+    font-weight: 600;
+    background: #ffff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  .collapsible label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    background: url(images/arrow.svg) no-repeat 0 0;
+    transition: all 0.3s ease;
+  }
+  
+  .collapsible input:checked + label::after {
+    transform: rotate(90deg);
+  }
+
+  .collapsible-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+  }
+  .collapsible input:checked ~ .collapsible-text {
+    max-height: 300px;
+    padding-bottom: 255px;
+    background: #ffff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+  }
+
+  .collapsible-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: #1c1c6b;
+  }
+  
+  .collapsible-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
