@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Contract - Vườn Sao Băng</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div id="top"></div>
+    
+    <!-- Background animations như các trang khác -->
+    <div class="stars"></div>
+    <div class="shooting-star" style="top:10%; left:95%; animation-delay: 1s;"></div>
+    <div class="shooting-star" style="top:30%; left:85%; animation-delay: 2s;"></div>
+    <div class="shooting-star" style="top:50%; left:90%; animation-delay: 2.5s;"></div>
+    <div class="shooting-star" style="top:70%; left:80%; animation-delay: 3s;"></div>
+    <div class="shooting-star" style="top:20%; left:92%; animation-delay: 1.5s;"></div>
+    
+    <!-- Navigation Menu giống y chang (có thể copy nguyên từ index.html hoặc TimelineX.html) -->
+    <nav>
+        <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            <span>Vườn Sao Băng</span>
+        </div>
+        <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="index.html#about">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <a>Project</a>
+            <div class="subnav">
+                <a href="index.html#project">Information</a>
+                <a href="TimelineX.html">Timeline</a>
+            </div>
+            </div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="index.html#team">Team</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="index.html#contact">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+        <div class="links">
+            <a href="index.html#top">Home</a>
+            <a href="index.html#project">Project</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#team">Team</a>
+            <a href="index.html#contact">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+        </div>
+    </nav>
+    
+    <!-- Section hiển thị Contract -->
+    <section class="contract" id="contract">
+        <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1500">
+            <span>Our Contract</span>
+        </div>
+        <div class="contract-container" data-aos="fade-up" data-aos-duration="1500">
+            <!-- Bạn cần sửa src bên dưới với embed link từ Google Drive -->
+            <iframe src="https://drive.google.com/file/d/1iDsEm5qEIkqYj4oaEhUK02XM2LOfygnS/preview" width="100%" height="800" style="border: none;"></iframe>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section (copy nguyên từ file TimelineX.html hoặc index.html) -->
+    <footer>
+        <div class="text">
+        <span>Created By <a href="https://www.facebook.com/adamng.0210/">nbzzz</a> (Nguyễn Võ Ngọc Bảo) | &#169; 2025 All Rights Reserved</span>
+        </div>
+    </footer>
+
+    <!-- Script Files -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/AOS-effect.js"></script>
+    <script src="scripts/dropdown-effect.js"></script>
+</body>
+</html>

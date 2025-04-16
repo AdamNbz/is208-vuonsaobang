@@ -710,7 +710,7 @@ section .button button:hover{
     width: 80%;
     text-align: center;
     margin: auto;
-    padding: 150px;
+    padding: 50px;
 }
 
 .contact .topic{
@@ -719,6 +719,55 @@ section .button button:hover{
     font-weight: 600;
     position: relative;
     padding-bottom: 8px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-member {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 0 30px #b74b4b;
+    transition: transform 0.3s;
+}
+.contact-member:hover {
+    transform: scale(1.05);
+}
+
+.contact-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.member-info {
+    text-align: center;
+}
+
+.member-info strong {
+    color: #b74b4b;
+    font-size: 1.2rem;
+}
+
+.member-info em {
+    color: #ccc;
+}
+
+.member-info p {
+    color: #fff;
+    margin-top: 5px;
 }
 
 footer{
@@ -854,30 +903,7 @@ footer .text span a:hover{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*TimelineX.html design*/
 .warpper {
     display: flex;
     padding-top: 20px;
@@ -890,67 +916,88 @@ footer .text span a:hover{
     max-width: 950px;
     overflow: hidden;
     font-weight: 500;
-  }
-  .collapsible input {
-    display: none;
-  }
-  
-  .collapsible label {
-    position: relative;
-    font-weight: 600;
-    background: #ffff;
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
-    color: #1c1c6b;
-    display: block;
-    margin-bottom: 10px;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-    z-index: 1;
-  }
-  .collapsible label:after {
-    content: "";
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    width: 18px;
-    height: 18px;
-    background: url(images/arrow.svg) no-repeat 0 0;
-    transition: all 0.3s ease;
-  }
-  
-  .collapsible input:checked + label::after {
-    transform: rotate(90deg);
-  }
+}
 
-  .collapsible-text {
-    max-height: 1px;
-    overflow: hidden;
-    border-radius: 4px;
-    line-height: 1.4;
-    position: relative;
-    top: -100%;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-    margin-bottom: 20px;
-  }
-  .collapsible input:checked ~ .collapsible-text {
-    max-height: 300px;
-    padding-bottom: 255px;
+.collapsible input {
+display: none;
+}
+
+.collapsible label {
+position: relative;
+font-weight: 600;
+background: #ffff;
+box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+color: #1c1c6b;
+display: block;
+margin-bottom: 10px;
+cursor: pointer;
+padding: 15px;
+border-radius: 4px;
+z-index: 1;
+}
+.collapsible label:after {
+content: "";
+position: absolute;
+right: 15px;
+top: 15px;
+width: 18px;
+height: 18px;
+background: url(images/arrow.svg) no-repeat 0 0;
+transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label::after {
+transform: rotate(90deg);
+}
+
+.collapsible-text {
+max-height: 1px;
+overflow: hidden;
+border-radius: 4px;
+line-height: 1.4;
+position: relative;
+top: -100%;
+opacity: 0.5;
+transition: all 0.3s ease;
+margin-bottom: 20px;
+}
+
+
+.collapsible input:checked ~ .collapsible-text {
+    max-height: none;
+    padding-bottom: 25px;
     background: #ffff;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
     opacity: 1;
     top: 0;
-  }
+}
 
-  .collapsible-text h2 {
+.collapsible-text h2 {
     margin-bottom: 10px;
     padding: 15px 15px 0;
     color: #1c1c6b;
-  }
-  
-  .collapsible-text p {
+}
+
+.collapsible-text p {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.pdf-embed-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
   }
   
+  .pdf-embed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .pdf-embed h2 {
+    color: black;
+    margin-bottom: 10px;
+  }
